@@ -2,6 +2,6 @@
 # resources/
 public/
 node_modules/
-jsconfig.json
-package-lock.json
+# jsconfig.json
+# package-lock.json
 # yarn.lock

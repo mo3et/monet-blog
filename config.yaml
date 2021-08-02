@@ -1,12 +1,13 @@
 baseurl: https://monet.caitou.org/
 languageCode: en-us
-theme: hugo-theme-stack
+theme: "hugo-theme-stack"
 
 # 分页
 paginate: 5
 paginatePath: "page"
 title: Monet Blog 
 # title: Monet Blog  by Hugo
+
 enableEmoji: true
 enableGitInfo: true
 publishdir: public

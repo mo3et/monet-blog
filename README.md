@@ -1,6 +1,6 @@
 # Monet-Blog
 
-Monet Blog by Hugo
+Monet Blog by [Hugo](https://gohugo.io/)
 
 
 ## [Blog Websites](https://monet.caitou.org)
@@ -10,6 +10,8 @@ Monet Blog by Hugo
 
 ----------------------------------------------------------------
 ## Ref
+
+
 ### Github  Actions:
 Use Hugo setup: https://github.com/marketplace/actions/hugo-setup
 
