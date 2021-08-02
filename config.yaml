@@ -36,7 +36,7 @@ params: # 站点全局设置
     featuredImageField: image
     enableInlineShortcodes: true
     rssFullContent: true
-    favicon: "https://raw.githubusercontent.com/Mo3et/Monet-Blog/main/assets/img/yarn-favicon.png"
+    favicon: "https://raw.githubusercontent.com/Mo3et/Monet-Blog/main/assets/img/Emoji/crossed_swords.png"
     # favicon: img/yarn-favicon.png
     footer:
         since: 2020
