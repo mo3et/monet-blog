@@ -2,7 +2,8 @@ baseurl: https://example.com
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
-title: "Monet Blog by Hugo"
+title: Monet Blog 
+# title: Monet Blog  by Hugo
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -35,7 +36,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: Something and anything.
         avatar:
             enabled: true
             local: true
