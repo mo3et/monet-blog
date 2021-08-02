@@ -2,12 +2,11 @@
 name: Deploy
 on:
   push:
-    # branches:
-    #   - main  # 只在main上push触发部署
+    branches: [main] # 只在main上push触发部署
     #   - add_hugo
-    paths-ignore:   # 下列文件的变更不触发部署，可以自行添加
-      - README.md
-      - LICENSE
+    # paths-ignore:   # 下列文件的变更不触发部署，可以自行添加
+    #   - README.md
+    #   - LICENSE
 
 jobs:
   deploy:
@@ -15,8 +14,10 @@ jobs:
 
     steps:  # 自动化步骤
     - name: Checkout
-      uses: actions/checkout@v2.3.4     # 第一步，下载代码仓库
-
+      uses: actions/checkout@v2     # 第一步，下载代码仓库
+      with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
     - name: Hugo setup  # 第二步，安装Hugo
       uses: peaceiris/actions-hugo@v2.4.13
       with:
@@ -27,6 +28,9 @@ jobs:
 
     - name: Build Hugo # 编译Hugo
       run: hugo -D --minify
+      with: 
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
     #   Output will be in ./public/ directory by default 
     # (-d/--destination flag to change it, or set publishdir in the config file).
     # Example:   hugo -D --minify
