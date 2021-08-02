@@ -30,13 +30,13 @@ permalinks:
     posts: /p/:slug/
     page: /:slug/
 
-params:
+params: # 站点全局设置
     mainSections:
         - posts
     featuredImageField: image
     rssFullContent: true
     favicon:
-
+        src: img/favicon.png
     footer:
         since: 2020
         customText:

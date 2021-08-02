@@ -17,7 +17,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2     # 第一步，下载代码仓库
       with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
+          submodules: true  # Fetch Hugo themes (true OR recursive) #!!!!重点
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
     - name: Hugo setup  # 第二步，安装Hugo
       uses: peaceiris/actions-hugo@v2.4.13
