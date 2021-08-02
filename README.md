@@ -2,4 +2,4 @@
 
 Monet Blog by Hugo
 
-Websites: [Monet.caitou.com](https://monet.caitou.org)
+Websites: [Monet.caitouyun.com](https://monet.caitou.org)
