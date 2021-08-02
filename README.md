@@ -11,6 +11,7 @@ Monet Blog by [Hugo](https://gohugo.io/)
 ----------------------------------------------------------------
 ## Ref
 
+##  [Theme](https://docs.stack.jimmycai.com/zh/)
 
 ### Github  Actions:
 Use Hugo setup: https://github.com/marketplace/actions/hugo-setup
