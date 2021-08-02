@@ -11,7 +11,6 @@ on:
 
 jobs:
   deploy:
-
     runs-on: ubuntu-latest   # 使用ubuntu系统镜像运行自动化脚本
 
     steps:  # 自动化步骤

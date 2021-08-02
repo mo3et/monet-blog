@@ -4,6 +4,8 @@ theme: hugo-theme-stack
 paginate: 5
 title: Monet Blog 
 # title: Monet Blog  by Hugo
+enableEmoji: true
+enableGitInfo: true
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
