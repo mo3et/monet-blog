@@ -29,8 +29,8 @@ jobs:
 
     - name: Build Hugo # 编译Hugo
       run: hugo -D --minify
-      with: 
-        publish_dir: ./public
+      # with: 
+      #   publish_dir: ./public
     #   Output will be in ./public/ directory by default 
     # (-d/--destination flag to change it, or set publishdir in the config file).
     # Example:   hugo -D --minify
