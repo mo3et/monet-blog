@@ -26,12 +26,12 @@ googleAnalytics:
 DefaultContentLanguage: en
 
 permalinks:
-    post: /p/:slug/
+    posts: /p/:slug/
     page: /:slug/
 
 params:
     mainSections:
-        - post
+        - posts
     featuredImageField: image
     rssFullContent: true
     favicon:
@@ -42,11 +42,11 @@ params:
 
     dateFormat:
         published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 MST
+        lastUpdated: January 02, 2006 15:04:05 MST
 
     sidebar:
-        emoji: 👾
-        # emoji: ⌨️🎮👾🎸🔮🎹🍥
+        emoji: 🧙
+        # emoji: ⌨️🎮👾🎸🔮🎹🍥🧙🕹️💎🖋️
         subtitle: Something and anything.
         avatar:
             enabled: true
