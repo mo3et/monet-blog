@@ -34,8 +34,10 @@ params: # 站点全局设置
     mainSections:
         - posts
     featuredImageField: image
+    enableInlineShortcodes: true
     rssFullContent: true
-    favicon: assests/img/favicon.ico
+    favicon: 
+        - img/favicon.ico
     footer:
         since: 2020
         customText:
@@ -167,3 +169,20 @@ markup:
         startLevel: 2
     highlight:
         noClasses: false
+
+
+    # frontmatter:
+    #   date:
+    #   - date
+    #   - publishDate
+    #   - lastmod
+    #   expiryDate:
+    #   - expiryDate
+    #   lastmod:
+    #   - :git
+    #   - lastmod
+    #   - date
+    #   - publishDate
+    #   publishDate:
+    #   - publishDate
+    #   - date
