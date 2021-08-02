@@ -59,7 +59,11 @@ jobs:
         hugo-version: '0.74.3'
     - name: Build Hugo # 编译Hugo
       run: |
-        hugo -D --minify
+        hugo -D
+    #   Output will be in ./public/ directory by default 
+    # (-d/--destination flag to change it, or set publishdir in the config file).
+    # Example:   hugo -D --minify
+
     - name: Deploy to Caitouyun
       run: |
           curl -sf https://cli.caitouyun.com/install.sh | sh
