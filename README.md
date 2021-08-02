@@ -6,6 +6,12 @@ Monet Blog by [Hugo](https://gohugo.io/)
 ## [Blog Websites](https://monet.caitou.org)
 
 
+技术栈：
+TODO: Use
+- [ ] jsdelivr
+- [ ] purecss
+- [ ]
+- [ ]
 
 
 ----------------------------------------------------------------

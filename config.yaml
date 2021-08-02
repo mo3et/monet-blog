@@ -36,8 +36,7 @@ params: # 站点全局设置
     featuredImageField: image
     enableInlineShortcodes: true
     rssFullContent: true
-    favicon: 
-        - image/favicon.png
+    favicon: img/yarn-favicon.png
     footer:
         since: 2020
         customText:
