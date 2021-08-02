@@ -21,7 +21,7 @@ jobs:
       uses: peaceiris/actions-hugo@v2.4.13
       with:
         hugo-version: 'latest'
-        # extended: true  # use a Hugo extended version.
+        extended: true  # use a Hugo extended version.
       # with:
       #   hugo-version: '0.86.1'
 
@@ -30,12 +30,12 @@ jobs:
     #   Output will be in ./public/ directory by default 
     # (-d/--destination flag to change it, or set publishdir in the config file).
     # Example:   hugo -D --minify
-
-    - uses: caitouyun/action@master
-      with:
-        args: caitou deploy --git
+    - name: Caitou Deploy
+      run:  |
+        curl -sf https://cli.caitouyun.com/install.sh | sh
+        caitou deploy --git
       env:
-        CAITOU_TOKEN: ${{ secrets.CAITOU_TOKEN }}
+          CAITOU_TOKEN: ${{ secrets.CAITOU_TOKEN }}
 
 
 
