@@ -1,5 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "https://monet.caitou.org/"
 languageCode = "en-us"
 theme = "hugo-theme-stack"
 # title = "My New Hugo Site"
-title = "Monet Blog by Hugo"
+title = "Monet Blog "
