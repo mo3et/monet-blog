@@ -1,11 +1,19 @@
-baseurl: https://example.com
+baseurl: https://monet.caitou.org/
 languageCode: en-us
 theme: hugo-theme-stack
+
+# 分页
 paginate: 5
+paginatePath: "page"
 title: Monet Blog 
 # title: Monet Blog  by Hugo
 enableEmoji: true
 enableGitInfo: true
+publishdir: public
+hasCJKLanguage: true
+
+## 摘要长度
+summaryLength: 140
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -50,7 +58,7 @@ params:
         toc: true
         readingTime: true 
         license:
-            enabled: true
+            enabled: false
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
