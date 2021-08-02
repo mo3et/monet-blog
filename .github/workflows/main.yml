@@ -31,12 +31,11 @@ jobs:
     # (-d/--destination flag to change it, or set publishdir in the config file).
     # Example:   hugo -D --minify
 
-    - name: Deploy to Caitouyun
-      run: |
-          curl -sf https://cli.caitouyun.com/install.sh | sh
-          caitou deploy --git
+    - uses: caitouyun/action@master
+      with:
+        args: caitou deploy --git
       env:
-          CAITOU_TOKEN: ${{ secrets.CAITOU_TOKEN }}
+        CAITOU_TOKEN: ${{ secrets.CAITOU_TOKEN }}
 
 
 
