@@ -43,7 +43,7 @@ jobs:
 
 
 
-    ##########  Other   #########
+    ##########  Other author configuation   #########
     # - name: Build  # 第三步，编译 hugo
     #   run: |
     #     cd ./website
@@ -58,3 +58,21 @@ jobs:
     #     SERVER_IP: ${{ secrets.SSH_HOST }}  # 引用配置，服务器的host名（IP或者域名domain.com）
     #     USERNAME: ${{ secrets.SSH_USERNAME }}  # 引用配置，服务器登录名
     #     SERVER_DESTINATION: /var/www/books/leetcode/   # 部署到目标文件夹
+
+        
+      # ##### Other Config
+      # - run: 
+      # - name: Upload a Build Artifact
+      #   uses: actions/upload-artifact@v2.2.4
+      #   with:
+      #     name: win
+      #     path: |    #需要Upload的文件夹
+      #        packages/desktop/
+      #        packages/desktop/build
+      #        packages/desktop/dist/
+      #        packages/desktop/client/main.dll
+      
+      # with:
+      #   args: release
+      # env:
+      #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
