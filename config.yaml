@@ -27,12 +27,12 @@ googleAnalytics:
 DefaultContentLanguage: en
 
 permalinks:
-    posts: /p/:slug/
+    post: /p/:slug/
     page: /:slug/
 
 params: # 站点全局设置
     mainSections:
-        - posts
+        - post
     featuredImageField: image
     enableInlineShortcodes: true
     rssFullContent: true

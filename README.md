@@ -25,3 +25,5 @@ Use Hugo setup: https://github.com/marketplace/actions/hugo-setup
 
 Other Reference:
 Github Pages action: https://github.com/marketplace/actions/github-pages-action
+
+Theme MemE: https://github.com/reuixiy/hugo-theme-meme
