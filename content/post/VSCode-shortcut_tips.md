@@ -1,4 +1,5 @@
 ---
+author: Monet
 title: "VSCode Shortcut_tips"
 date: 2077-04-04T19:21:40+08:00
 draft: flase
@@ -8,8 +9,10 @@ categories: [
 ]
 ---
 
-### Use by  extensions  `Markdown Shortcuts`
+## Use by  extensions  `Markdown Shortcuts`
 
+
+ Ref:[Markdown Shortcuts - VS Code Extensions](https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts)
 
 |Command(Only Use `Markdown Shortcuts` )| Bind Key|
 |---------|----------|
