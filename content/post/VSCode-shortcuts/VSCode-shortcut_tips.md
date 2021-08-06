@@ -1,7 +1,7 @@
 ---
 author: Monet
 title: "VSCode Shortcut_tips"
-date: 2077-04-04T19:21:40+08:00
+date: 2021-08-06T19:21:40+08:00
 draft: flase
 tags: ["Tips","VS Code"]
 categories: [
