@@ -18,6 +18,8 @@ categories: ["Go"]
 
  [Go语言高级编程](https://chai2010.cn/advanced-go-programming-book/)⭐⭐⭐
 
+[Golang入门手册](../golang16天入门手册.pdf)
+
 ------
 
 [Go 入门指南 the way to Go](http://books.studygolang.com/the-way-to-go_ZH_CN/)
