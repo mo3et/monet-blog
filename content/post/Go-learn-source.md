@@ -5,7 +5,7 @@ draft: false
 tags: ["Go"]
 categories: ["Go"]
 ---
-* # [Go Offical Docs](https://golang.org/doc/)
+ # [Go Offical Docs](https://golang.org/doc/)
 # Go learning Source
 
 ## [Learn Go with Tests](https://studygolang.gitbook.io/learn-go-with-tests/) ⭐⭐⭐⭐⭐
