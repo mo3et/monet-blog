@@ -41,3 +41,7 @@ categories: ["Go"]
 
 
 [微信 SDK For Golang](http://www.topgoer.cn/docs/gowechat/gowechat-1cb49i4ees248)
+
+[Go2Generics](https://github.com/golang-design/go2generics/blob/v0.0.1/README.cn.md)
+
+[Go安全指南](https://github.com/Tencent/secguide/blob/main/Go%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97.md)
