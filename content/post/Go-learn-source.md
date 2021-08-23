@@ -5,7 +5,7 @@ draft: false
 tags: ["Go"]
 categories: ["Go"]
 ---
-# [Go Offical Docs](https://golang.org/doc/)
+* # [Go Offical Docs](https://golang.org/doc/)
 # Go learning Source
 
 ## [Learn Go with Tests](https://studygolang.gitbook.io/learn-go-with-tests/) ⭐⭐⭐⭐⭐
@@ -33,6 +33,7 @@ categories: ["Go"]
 
 ## [Gin 文档](https://gin-gonic.com/zh-cn/docs/)
 
+[The Ultimate Go Study Guide](https://github.com/ardanlabs/gotraining-studyguide)
 ### Other
 [Go 知识图谱 (map)](https://www.processon.com/view/link/5a9ba4c8e4b0a9d22eb3bdf0#map)
 
