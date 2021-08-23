@@ -20,6 +20,7 @@ categories: ["Go"]
 
 [Golang入门手册 TechFlow](https://cdn.staticaly.com/gh/Mo3et/Monet-Blog/main/content/golang_TechFlow.pdf)
 <!-- [Golang入门手册](../golang_TechFlow.pdf) -->
+[Go 100 Day](https://github.com/rubyhan1314/Golang-100-Days)
 
 ------
 
