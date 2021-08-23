@@ -22,6 +22,8 @@ categories: ["Go"]
 <!-- [Golang入门手册](../golang_TechFlow.pdf) -->
 [Go 100 Day](https://github.com/rubyhan1314/Golang-100-Days)
 
+
+[字节校园 [计算机基础知识宝典] Golang](https://bytedancecampus1.feishu.cn/docs/doccnqlspnrKTpbuWAToWMuEaPd#BPE5K5)
 ------
 
 [Go 入门指南 the way to Go](http://books.studygolang.com/the-way-to-go_ZH_CN/)
