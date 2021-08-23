@@ -18,7 +18,7 @@ categories: ["Go"]
 
  [Go语言高级编程](https://chai2010.cn/advanced-go-programming-book/)⭐⭐⭐
 
-[Golang入门手册](https://cdn.staticaly.com/gh/Mo3et/Monet-Blog/main/content/golang_TechFlow.pdf)
+[Golang入门手册 TechFlow](https://cdn.staticaly.com/gh/Mo3et/Monet-Blog/main/content/golang_TechFlow.pdf)
 <!-- [Golang入门手册](../golang_TechFlow.pdf) -->
 
 ------
