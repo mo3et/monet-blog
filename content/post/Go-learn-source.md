@@ -38,6 +38,7 @@ categories: ["Go"]
 
 [The Ultimate Go Study Guide](https://github.com/ardanlabs/gotraining-studyguide)
 
+[Go 进阶内容](https://github.com/hwholiday/learning_tools)
 ### Other
 
 [Go 知识图谱 (map)](https://www.processon.com/view/link/5a9ba4c8e4b0a9d22eb3bdf0#map)
