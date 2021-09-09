@@ -1,6 +1,6 @@
 ---
 title: "Archives"
-date: 2021-09-09
+date: 2019-05-28
 layout: "archives"
 slug: "archives"
 menu:
@@ -8,10 +8,3 @@ menu:
         weight: -70
         pre: archives
 ---
-
-My Github: [site Link](https://github.com/mo3et)
-
-Magic Link:[links](https://github.com/mo3et/Monet-blog)
-
-
-[Fast Jump 2 Edit](https://github.dev/Mo3et/Monet-Blog)
