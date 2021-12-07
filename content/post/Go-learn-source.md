@@ -1,10 +1,11 @@
 ---
 title: "Go Learn Source"
-date: 2021-09-09T15:18:51+08:00
+date: 2021-11-09T15:18:51+08:00
 draft: false
 tags: ["Go"]
 categories: ["Go"]
 title: "Go Learn Source ⭐⭐⭐"
+lastmod: "2021-09-09"
 ---
 # Go Learn Source ⭐⭐⭐
 # [Go Offical Docs](https://golang.org/doc/)
