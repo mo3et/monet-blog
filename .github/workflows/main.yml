@@ -20,8 +20,7 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive) #!!!!重点
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
     - name: Hugo setup  # 第二步，安装Hugo
-      # uses: peaceiris/actions-hugo@v2.4.13
-      uses: peaceiris/actions-hugo@latest
+      uses: peaceiris/actions-hugo@2.6.0
       with:
         hugo-version: 'latest'
         extended: true  # use a Hugo extended version.
