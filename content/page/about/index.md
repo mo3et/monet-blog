@@ -35,7 +35,7 @@ Learn more and contribute on [GitHub](https://github.com/gohugoio). -->
 
 My Github: [site Link](https://github.com/mo3et)
 
-Magic Link:[links](https://github.com/mo3et/Monet-blog)
+Repo Link:[links](https://github.com/mo3et/Monet-blog)
 
 
-[Fast Jump 2 Edit](https://github.dev/Mo3et/Monet-Blog)
+[Fast2Edit](https://github.dev/Mo3et/Monet-Blog)
