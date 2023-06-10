@@ -53,7 +53,8 @@ params: # 站点全局设置
   enableInlineShortcodes: true
   rssFullContent: true
   # favicon: "https://raw.githubusercontent.com/Mo3et/Monet-Blog/main/assets/img/Emoji/crossed_swords.png" #
-  favicon: "https://raw.githubusercontent.com/Mo3et/Monet-Blog/main/assets/img/Emoji/dagger.png"
+  favicon: img/favicon.ico
+  # favicon: "https://raw.githubusercontent.com/Mo3et/Monet-Blog/main/assets/img/Emoji/dagger.png"
   # favicon: img/yarn-favicon.png
 
   footer:
