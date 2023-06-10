@@ -54,7 +54,7 @@ params: # 站点全局设置
             enabled: true
             local: true
             # src: img/avatar.png
-            src: img/aruru.png
+            # src: img/aruru.png
 
     article:
         math: false
