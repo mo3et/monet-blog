@@ -28,7 +28,8 @@ jobs:
       #   hugo-version: '0.86.1'
 
     - name: Build Hugo # 编译Hugo
-      run: hugo -D --minify
+      run: hugo -D
+      # run: hugo -D --minify
       # with: 
       #   publish_dir: ./public
     #   Output will be in ./public/ directory by default 
