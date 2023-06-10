@@ -7,7 +7,6 @@ toc: true
 tags: ["network"]
 ---
 
-
 # 计算机网络概论
 
 Hello，大家好。今天一起来学习下，无论是前端还是后端，计算机必须要使用的部件，计算机网络。学好计算机网络不言而喻，我们每日在互联网上交流免不了网络，而提供坚实稳定的网络稳定性和高效性能则是各家都在追求的优化。
@@ -62,11 +61,11 @@ locale: 38:00
 
 ### 协议：
 
- ![](./network-protocol.png)
+ ![](../md_images/network-protocol.png)
 
 ### 标头和载荷：
 
-![](./Network-header-hel.png)
+![](../md_images/Network-header-hel.png)
 
 ## 4. Web 应用
 
@@ -80,7 +79,7 @@ locale: 38:00
 
 HTTP 连接模型
 
-![HTTP-Connect-Model.png](./HTTP-Connect-Model.png)
+![HTTP-Connect-Model.png](../md_images/HTTP-Connect-Model.png)
 
 ### Web 应用
 
@@ -114,9 +113,9 @@ request=style.css,content=' color:red;'
 request=style.css,content='}'
 ```
 
-![](./HTTP2-frame.png)
+![](../md_images/HTTP2-frame.png)
 
-![](./HTTP2-frame2.png)
+![](../md_images/HTTP2-frame2.png)
 
 Frame 解析：
 
@@ -158,7 +157,7 @@ Frame 解析：
 
 ### HTTP2: 3 RTT启动
 
-![](./HTTP2-3RTT.png)
+![](../md_images/HTTP2-3RTT.png)
 
 要经历HTTP 连接，要经过三个 RTT（Run-Trip Time）,三个RTT 分别是 TCP连接建立需要一个RTT，TLS连接建立需要两个RTT。 TLS 1.2 及以下需要两个RTT。TLS 1.3以上可以实现首次1RTT，二次 0 RTT。TCP不知道自己运送的是TLS报文，无法通过改造进行优化。
 
@@ -174,7 +173,7 @@ QUIC 将 TLS 做成自成的一部分，解决了TCP和TLS需要各自握手的�
 
 ### HTTP3：QUIC - 1RTT
 
-![](./HTTP3-QUIC-1RTT.png)
+![](../md_images/HTTP3-QUIC-1RTT.png)
 
 首次连接，HTTP客户端第一次与服务端发起连接，QUIC客户端先发起连接请求，请求服务端给一把钥匙，加密密钥。QUIC服务在收到请求后，会把证书和加密秘钥一起发送给客户端。QUIC客户端随后告知HTTP客户端，可以发送HTTP报文，后续的通信都使用加密秘钥进行加密。
 
@@ -182,7 +181,7 @@ QUIC服务端也会告诉QUIC客户端，这里有新的密钥，不用问。
 
 QUIC 相比原先的TCP，把原先的TCP和TLS的握手组合起来了，因此可以实现1RTT的连接。
 
-![](./HTTP3-QUIC-0RTT.png)
+![](../md_images/HTTP3-QUIC-0RTT.png)
 
 当同一个客户端再次发起 HTTP请求时，QUIC 客户端会使用上次的QUIC服务端偷偷给的密钥，直接把HTTP请求加密发送给服务端，这样服务端就可以直接响应客户端的请求。这种方式就可以实现0RTT连接。 
 
@@ -208,11 +207,11 @@ HTTP3使用了基于UDP重新设计的QUIC协议，避免了TCP中的队头堵�
 
 - 单个服务器承载能量有限，例如大型活动就会崩溃。
 
-![](./CDN-topology.png)
+![](../md_images/CDN-topology.png)
 
 通常 CDN 提供商会在服务范围内按地理位置进行服务器的分布。如一个CDN 选择在 北京、上海、广州、成都、长沙、兰州、长春做出自己的CDN服务器，全国的用户都可以在很低的路由跳之内获取响应内容。
 
- ![](./CDN-jump.png)
+ ![](../md_images/CDN-jump.png)
 
 ### CDN: DNS劫持
 
@@ -232,7 +231,7 @@ HTTP3使用了基于UDP重新设计的QUIC协议，避免了TCP中的队头堵�
 
 浏览器向本地DNS查询域名对应的IP地址，向上一层的DNS服务器发送查询请求，DNS服务器发现这个域名应该交给douyin解析，于是交给了douyin运营解析服务器。douyin运营解析服务器收到请求后，发现域名是CDN加速域名，于是没有返回IP，返回了新的DNS地址，新DNS地址是CDN管理的，本地DNS又向CDN的DNS发起了请求，CDN的DNS根据用户IP，确定离得最近的CDN是广州的CDN，于是返回了广州CDN的IP。浏览器最终和广州的服务器进行连接，而不是北京的服务器。
 
-![](./CDN-distance-comparison.png)
+![](../md_images/CDN-distance-comparison.png)
 
 如何选择CDN服务器，一种简单的策略，根据DNS查询来源IP地理位置，选择就近的CDN服务器。
 
@@ -240,7 +239,7 @@ HTTP3使用了基于UDP重新设计的QUIC协议，避免了TCP中的队头堵�
 
 另一种情况，用户不使用本地DNS服务商提供的DNS，指定另外的DNS。例如指定Google 的DNS 8.8.8.8。这时基于地理位置的DNS重定向可能适得其反了。除此之外，CDN当时的负载，用户到CDN 链路的负载，都可能影响最终访问速度和质量。
 
-![](./CDN-Pull-push.png)
+![](../md_images/CDN-Pull-push.png)
 
 拉策略和推策略
 
@@ -307,13 +306,13 @@ ws.on('message',function message(data){
 
 ### WebSocket 和 HTTP的关系：升级！
 
-![](./WebSocket-HTTP.png)
+![](../md_images/WebSocket-HTTP.png)
 
 上图展示，WebSocket如何从HTTP升级而来的。WebSocket前有一个HTTP的交互，客户端发送概率请求，这里的Pass 是斜杠，还有额外的Header告诉服务器，客户端向把请求升级为WebSocket，例如这里的 `Connection: Upgrade` 以及 `Upgrade: websocket`.
 
 **HTTP 响应**
 
-![](./HTTP-ws-response.png)
+![](../md_images/HTTP-ws-response.png)
 
 服务端在接收这个概率请求后，决定升级这个 WebSocket连接。便会向客户端响应 `101 Switching Protocols` 这个状态。客户端在接收到服务端发送的 101代码之后，后续就可以用 WebSocket 协议发送消息了。操作口从HTTP 切换成了 WebSocket.
 
@@ -321,13 +320,13 @@ ws.on('message',function message(data){
 
 **WebSocket 客户端消息**
 
-![](./WebSocket-client-send.png)
+![](../md_images/WebSocket-client-send.png)
 
 连接建立后，客户端先发送一串字符串‘something’。
 
 **WebSocket 服务端消息**
 
-![](./Ws-server-message.png)
+![](../md_images/Ws-server-message.png)
 
 服务端把收到的消息重新发给了客户端。
 
@@ -401,7 +400,7 @@ HTTP WebSocket UDP 都是明文的。明文会导致很多行为无法通过网�
 
 ### 如何实现完整性
 
-![](./security-completely1.png)
+![](../md_images/security-completely1.png)
 
 - 密码散列函数（Hash）性质：找到两个不同的输入使之经过密码散列函数后有相同的哈希值，在计算上是不可能的
 
@@ -417,7 +416,7 @@ HTTP WebSocket UDP 都是明文的。明文会导致很多行为无法通过网�
 
 但如果攻击者改了m，重新计算 h,组成了新的 m+h，对方不就发现不了消息被篡改过了么，如果全是明文，这个方法没有任何防止篡改的作用。
 
-![](./security-completely2.png)
+![](../md_images/security-completely2.png)
 
 但假设双方有一个攻击者不知道的秘密信息 s (密钥)。
 
@@ -449,13 +448,13 @@ HTTP WebSocket UDP 都是明文的。明文会导致很多行为无法通过网�
 
 数字签名需满足可鉴别、不可伪造的特性，可鉴别用于验证身份，不可伪造用于确保签名真的来自于签名所声明的人，而不是攻击者。
 
-![](./security-authority.png)
+![](../md_images/security-authority.png)
 
 这样更像是加密而不像签名，使用非对称加密同时满足了机密性、完整性和身份验证。但非对称加密的计算效率太低，常用的方案是对内容进行密码散列函数后得到的hash值进行加密，获得数字签名，也被称为指纹。将数字签名附在信件后面，对方收到后使用公钥进行解密，获得Hash值，再将其与信件内容计算后的Hash值进行对比，如果一致，说明没有被篡改过。
 
 - 一般用于对公开内容（如包含公钥的证书）进行数字签名，防止篡改。
 
-![](./security-PKI.png)
+![](../md_images/security-PKI.png)
 
 签名能正常运行的前提：
 
@@ -469,13 +468,13 @@ HTTP WebSocket UDP 都是明文的。明文会导致很多行为无法通过网�
 
 有了这个公钥，即可在不安全的信道上，使用公钥和私钥加密交换机密性所需的秘密信息，即上文的密钥。也可以交换完整性所需的秘密信息，即计算Hash 值时的密钥s。
 
-![](./security-certificate-chan.png)
+![](../md_images/security-certificate-chan.png)
 
 DigiCert Global Root CA 是根证书，然后在由Rapid SSL的证书验证 feishu.com 的证书有效，则feishu 的公钥就是真公钥。
 
 ### 网络安全：HTTPS
 
-![](./security-HTTPS.png)
+![](../md_images/security-HTTPS.png)
 
 有了PKI 我们就可以实现基于明文的 HTTP 协议的安全通信，即HTTPS。
 
@@ -501,7 +500,7 @@ DigiCert Global Root CA 是根证书，然后在由Rapid SSL的证书验证 feis
 
 ### 小结：
 
-![](./security-Summary.png)
+![](../md_images/security-Summary.png)
 
 PKI 保证了你的系统中预置了可信任根证书，所有网站都会找其中一个根证书或者根证书所授权的中间证书签名，客户端拿到一个网站的证书后，挨个向证书链上的签发者验证证书的合法性，一直到根证书为止。如果根证书确认了次一级证书的签名，通过证书信任的传递性，最底层的网站证书就是可信的。如果证书链中最后一张证书在系统的根证书列表中找不到，那么这张证书就不能被信任，验证的服务器证书的有效性后，客户端使用证书中的公钥，通过非对称性加密，与服务端交换非对称性加密的算法和密钥，并使用该对称密钥对后续HTTP报文进行加密。服务端在通过要求客户端提供用户名和密码等信息，对客户端进行身份验证。至此，双方的通信收到保障，通信信息中间人无法篡改。
 
@@ -509,7 +508,7 @@ PKI 保证了你的系统中预置了可信任根证书，所有网站都会找�
 
 ## 计算机网络思维导图：
 
-![](./CNetwork-Mindmap.png)
+![](../md_images/CNetwork-Mindmap.png)
 
 蟹堡王帝国：如何从本地网络一步步搭建起一个遍布全国的广联网。
 
