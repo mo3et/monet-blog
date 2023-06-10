@@ -215,7 +215,7 @@ params: # 站点全局设置
       enabled: true
 
 ### Custom menu
-### See https://docs.stack.jimmycai.com/configuration/custom-menu
+### See https://stack.jimmycai.com/config/menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
   # main:
@@ -225,7 +225,14 @@ menu:
   #       weight: -100
   #       pre: home
 
-  main: []
+  main:
+      - identifier: home
+        name: Home
+        url: /
+        weight: -100
+        params:
+          icon: home
+          newTab: true
 
   social:
     - identifier: github
