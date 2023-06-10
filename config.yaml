@@ -164,7 +164,7 @@ params: # 站点全局设置
   widgets: # 图标和tag 相关
     homepage:
       - type: search
-      - type: archives
+      # - type: archives
         params:
           limit: 5
       - type: categories
