@@ -164,15 +164,15 @@ params: # 站点全局设置
   widgets: # 图标和tag 相关
     homepage:
       - type: search
-      # - type: archives
+      - type: archives
         params:
           limit: 5
       - type: categories
         params:
-          limit: 10
+          limit: 5
       - type: tag-cloud
         params:
-          limit: 10
+          limit: 5
     page:
       - type: toc
 
