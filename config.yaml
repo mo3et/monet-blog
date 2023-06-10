@@ -88,7 +88,7 @@ params: # 站点全局设置
     provider: disqus
 
     disqusjs:
-      shortname:
+      shortname: mo3et
       apiUrl:
       apiKey:
       admin:
