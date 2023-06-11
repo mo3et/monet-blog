@@ -80,7 +80,7 @@ locale: 38:00
 
 HTTP 连接模型
 
-![HTTP-Connect-Model.png](HTTP-Connect-Model.png)
+![](HTTP-Connect-Model.png)
 
 ### Web 应用
 
