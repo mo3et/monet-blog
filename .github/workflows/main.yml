@@ -28,7 +28,7 @@ jobs:
       #   hugo-version: '0.86.1'
 
     - name: Build Hugo # 编译Hugo
-      run: hugo
+      run: hugo --gc --cleanDestinationDir
       # run: hugo -D --minify
       # with: 
       #   publish_dir: ./public
