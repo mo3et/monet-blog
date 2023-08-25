@@ -72,7 +72,7 @@ params: # 站点全局设置
     avatar:
       enabled: true
       local: true
-      src: img/avatar.png
+      src: img/avatar.jpg
       # src: img/aruru.png
 
   article:
